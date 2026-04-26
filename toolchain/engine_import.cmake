@@ -5,7 +5,7 @@ macro(import_engine_lib TARGET_NAME LIB_NAME)
 
     set_target_properties(${TARGET_NAME} PROPERTIES
         IMPORTED_LOCATION             "${_dist}/lib/${CMAKE_SHARED_LIBRARY_PREFIX}${LIB_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX}"
-        INTERFACE_INCLUDE_DIRECTORIES "${_dist}/include"
+        INTERFACE_INCLUDE_DIRECTORIES "${_dist}/include;${_dist}/include/SDL2"
     )
 
     if(WIN32)

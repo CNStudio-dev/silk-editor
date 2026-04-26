@@ -1,0 +1,17 @@
+.vscode
+
+dist
+build
+temp
+
+*.so
+*.dll
+*.a
+*.dylib
+
+*.o
+*.obj
+
+*.exe
+*.out
+**/__generated_*
